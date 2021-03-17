@@ -1,7 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+:root{
+  --primary-white:#fff;
+  --primay-orange:#f9ab00;
+  --primary-dark:rgba(255,255,255,0)
+}
+
+body{
+  font-family: "Roboto" sans-serif;
+}
 .App {
   text-align: center;
 }
-
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -35,4 +45,41 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.logo{
+    width: 3.125rem;
+}
+
+/*---Menu Links----*/
+
+nav a.nav-link{
+ font-weight: 500;
+ letter-spacing: 0.0375rem;
+ cursor:pointer
+}
+
+nav ul li{
+  text-transform: uppercase;
+}
+
+.navbar-nav >li>a{
+  margin-right: 0.75rem;
+  margin-left: 0.75rem;
+  color:var(--primary-white)!important;
+  border-top:0.1875rem solid var(--primary-dark)
+}
+
+.navbar-brand{
+  max-width: 17.25rem;
+  padding: 0 !important;
+  height: 6rem;
+}
+
+.navbar-nav >li >a.active, .navbar-nav>li>a.active:focus{
+  border-top:0.1875rem solid var(--primay-orange);
+}
+
+.navbar-nav >li>a:hover{
+  border-top:0.1875rem solid var(--primay-orange);
 }
