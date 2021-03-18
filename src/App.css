@@ -163,3 +163,29 @@ nav ul li {
     font-size: 1.3rem !important;
   }
 }
+
+/*-------------------------------About Me------------------------*/
+.photo-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile-img {
+  /* width: 70%; */
+  width: 16rem;
+  border-radius: 50%;
+  padding: 0.3rem;
+  border: 1px solid var(--primay-orange);
+}
+
+.about-heading {
+  text-transform: uppercase;
+  color: var(--primay-orange);
+}
+
+@media (max-width: 468px) {
+  .profile-img {
+    width: 10rem;
+  }
+}
