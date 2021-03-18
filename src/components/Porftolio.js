@@ -44,7 +44,7 @@ const Porftolio = () => {
     const content = (
       <>
         <div className="justimage">
-          <img className="portfolio-image-popupbox-game" src={game} alt="Javascript Capstone Project" />
+          <img className="portfolio-image-popupbox" src={game} alt="Javascript Capstone Project" />
         </div>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia totam alias illo molestias explicabo ab modi quae sequi minima, rerum error in nisi aut laboriosam. Consequuntur quis earum doloremque nulla.</p>
         <b>DemoLink:</b>
@@ -75,14 +75,14 @@ const Porftolio = () => {
       <div className="container">
         <h1 className="text-uppercase text-center py-5">portfolio</h1>
         <div className="image-box-wrapper row justify-content-center">
-          <div className="portfolio-image-box-linter mx-3 my-3" onClick={openPopupboxLinter}>
+          <div className="portfolio-image-box mx-3 my-3" onClick={openPopupboxLinter}>
             <img className="portfolio-image" src={linter} alt="linter project" />
             <div className="overflow"></div>
             <FontAwesomeIcon className="portfolio-icon" icon={faSearchPlus} />
           </div>
           {/*-*/}
 
-          <div className="portfolio-image-box-game mx-3 my-3" onClick={openPopupboxGame}>
+          <div className="portfolio-image-box mx-3 my-3" onClick={openPopupboxGame}>
             <img className="portfolio-image" src={game} alt="Phaser Game Endless Runner" />
             <div className="overflow"></div>
             <FontAwesomeIcon className="portfolio-icon" icon={faSearchPlus} />
