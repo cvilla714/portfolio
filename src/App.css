@@ -1,11 +1,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
 
 :root {
-  --primary-white: #fff;
-  --primay-orange: #f9ab00;
-  --primary-dark: rgba(255, 255, 255, 0);
+  --primary-white: #ffffff;
+  --primary-light-grey: #f4f4f4;
+  --primary-grey: #ccd1d9;
+  --primary-dark-grey: #666666;
+  --primary-orange: #f9ab00;
+  --primary-dark: rgb(52, 58, 64);
   --primary-red: #ef4035;
   --primary-hover-red: #f33501;
+  --primary-black: #000000;
 }
 
 body {
@@ -188,4 +192,21 @@ nav ul li {
   .profile-img {
     width: 10rem;
   }
+}
+
+/*-------------------------------Porftolio------------------------*/
+.portfolio-wrapper {
+  background: var(--primary-light-grey);
+  padding: 3rem 0;
+}
+
+.portfolio-image {
+  width: 15rem;
+  border: 1px solid var(--primary-orange);
+  padding: 0 0.5rem;
+}
+
+.portfolio-image-box {
+  position: relative;
+  margin: 1rem;
 }
