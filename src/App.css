@@ -210,10 +210,10 @@ nav ul li {
   padding: 0 0.5rem;
 }
 
-/* .portfolio-image-box {
+.portfolio-image-box {
   position: relative;
   margin: 1rem;
-} */
+}
 
 /*-------------------------------Overflow Box ------------------------*/
 .overflow {
@@ -246,35 +246,3 @@ nav ul li {
   transition: 0.3s ease-in-out;
   cursor: pointer;
 }
-
-/*-------------------------------PopupBox ------------------------*/
-.portfolio-image-popupbox-linter {
-  width: 55rem;
-  padding: 0 0.5rem;
-  /* margin: 0 auto; */
-}
-
-.portfolio-image-popupbox-game {
-  width: 30rem;
-
-  padding: 0 0.5rem;
-  margin: 0 auto;
-}
-
-.hyper-link {
-  cursor: pointer;
-  color: var(--primary-orange);
-}
-
-.hyper-link:hover {
-  color: var(--primary-red);
-}
-
-.justimage {
-  width: 100%;
-  text-align: center;
-}
-/* .portfolio-image {
-  width: 45rem;
-  padding: 0 0.5rem;
-} */
