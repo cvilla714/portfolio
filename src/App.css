@@ -121,7 +121,9 @@ nav ul li {
 }
 
 .main-info h1 {
-  color: var(--primay-orange);
+  color: var(--primary-white);
+  font-weight: 900;
+  font-size: 3rem;
   text-transform: uppercase;
 }
 
@@ -202,6 +204,8 @@ nav ul li {
 
 .portfolio-image {
   width: 15rem;
+  height: 15rem;
+  object-fit: cover;
   border: 1px solid var(--primary-orange);
   padding: 0 0.5rem;
 }
