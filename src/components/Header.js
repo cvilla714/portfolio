@@ -5,7 +5,7 @@ const Header = () => {
   return (
     <div className="header-wrapper">
       <div className="main-info">
-        <h1>Web development and websites promotions</h1>
+        <h1 className="main-header">Full-Stack Developer</h1>
         <Typed className="typed-text" strings={["HTML/CSS", "Ruby", "Ruby on Rails", "Javascript", "Webpack", "Phaser", "NOde.js", "ExpressJs", "MongoDB", "Moongoose", "PostGreSql", "SQL", "React"]} typeSpeed={40} backSpeed={60} loop />
         <a href="#" className="btn-main-offer">
           Contact Me
