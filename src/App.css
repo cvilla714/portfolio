@@ -10,6 +10,7 @@
   --primary-red: #ef4035;
   --primary-hover-red: #f33501;
   --primary-black: #000000;
+  --popupbox-padding: 0 0.5rem;
 }
 
 body {
@@ -248,11 +249,35 @@ nav ul li {
 }
 
 /*-------------------------------PopupBox ------------------------*/
-.portfolio-image-popbox {
+.portfolio-image-popbox-linter {
   width: 45rem;
-  padding: 0 0.5rem;
+  padding: var(--popupbox-padding);
 }
 
+.portfolio-image-popupbox-game {
+  width: 37rem;
+  padding: var(--popupbox-padding);
+}
+
+.portfolio-image-popupbox-restaurant {
+  width: 65rem;
+  padding: var(--popupbox-padding);
+}
+
+.portfolio-image-popupbox-list {
+  width: 45rem;
+  padding: var(--popupbox-padding);
+}
+
+.portfolio-image-popupbox-weatherapp {
+  width: 35rem;
+  padding: var(--popupbox-padding);
+}
+
+.portfolio-image-popupbox-article {
+  width: 70rem;
+  padding: var(--popupbox-padding);
+}
 .hyper-link {
   cursor: pointer;
   color: var(--primary-orange);
@@ -260,4 +285,35 @@ nav ul li {
 
 .hyper-link:hover {
   color: var(--primary-red);
+}
+
+.justimage {
+  width: 100%;
+  text-align: center;
+}
+
+/*-------------------------------MediaQueries for PopupBox ------------------------*/
+@media (max-width: 768px) {
+  .portfolio-image-popupbox-linter,
+  .portfolio-image-popupbox-article,
+  .portfolio-image-popupbox-game,
+  .portfolio-image-popupbox-list,
+  .portfolio-image-popupbox-restaurant,
+  .portfolio-image-popupbox-weatherapp {
+    width: 100%;
+  }
+}
+
+@media (max-height: 570px) {
+  .portfolio-image-popupbox-linter,
+  .portfolio-image-popupbox-article,
+  .portfolio-image-popupbox-game,
+  .portfolio-image-popupbox-list,
+  .portfolio-image-popupbox-restaurant,
+  .portfolio-image-popupbox-weatherapp {
+    width: 100%;
+  }
+  .popupbox-wrapper {
+    height: 100%;
+  }
 }
