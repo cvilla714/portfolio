@@ -420,3 +420,26 @@ textarea.form-control {
     padding: 0 0.4rem;
   }
 }
+
+/*------------------------------Footer ------------------------*/
+.footer {
+  background: var(--primary-black);
+  color: var(--primary-dark);
+  padding: 3rem;
+}
+
+.footer a {
+  text-decoration: none;
+  color: var(--primary-grey);
+}
+
+.footer a:hover {
+  text-decoration: none;
+  color: var(--primary-orange);
+  cursor: pointer;
+}
+
+.media {
+  font-size: 2rem;
+  margin: 3rem;
+}
