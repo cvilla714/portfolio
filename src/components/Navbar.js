@@ -7,7 +7,7 @@ import { Link } from "react-scroll";
 
 const Navbar = () => {
   return (
-    <nav id="home" className="navbar navbar-expand-lg navbar-light bg-dark">
+    <nav className="navbar navbar-expand-lg navbar-light bg-dark fixed-top">
       <div className="container">
         <a className="navbar-brand text-white logo" href="#">
           Cosmel Villalobos
@@ -26,17 +26,17 @@ const Navbar = () => {
               </Link>
             </li>
             <li className="nav-item">
-              <Link smooth={true} to="about" className="nav-link" href="#">
+              <Link smooth={true} to="about" offset={-110} className="nav-link" href="#">
                 about me
               </Link>
             </li>
             <li className="nav-item">
-              <Link smooth={true} to="portfolio" className="nav-link" href="#">
+              <Link smooth={true} to="portfolio" offset={-110} className="nav-link" href="#">
                 portfolio
               </Link>
             </li>
             <li className="nav-item">
-              <Link smooth={true} to="contact" className="nav-link" href="#">
+              <Link smooth={true} to="contact" offset={-110} className="nav-link" href="#">
                 contact me
               </Link>
             </li>
