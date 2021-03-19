@@ -11,7 +11,8 @@ import { faSearchPlus } from "@fortawesome/free-solid-svg-icons";
 // React PopupBox
 import { PopupboxManager, PopupboxContainer } from "react-popupbox";
 import "react-popupbox/dist/react-popupbox.css";
-
+import { FaGithub } from "react-icons/fa";
+import { RiVidicon2Fill } from "react-icons/ri";
 const Porftolio = () => {
   // Linter Project
   const openPopupboxLinter = () => {
@@ -20,11 +21,22 @@ const Porftolio = () => {
         <div className="justimage">
           <img className="portfolio-image-popupbox-linter" src={linter} alt="Linter Ruby Capstone Project" />
         </div>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia totam alias illo molestias explicabo ab modi quae sequi minima, rerum error in nisi aut laboriosam. Consequuntur quis earum doloremque nulla.</p>
-        <b>GitHub:</b>{" "}
-        <a className="hyper-link" onClick={() => window.open("https://github.com/cvilla714/linterproject")}>
-          https://github.com/cvilla714/linterproject
-        </a>
+        <div className="py-3">
+          <p className="mt-3">This project was mainly around creating a linter that will check for comments, missing semicolons at the end of every line and also checking for the initial period to designate a class</p>
+          <p className="mt-1">Technologies Used:</p>
+        </div>
+        <div className="technologies">
+          <button className="btn btn-success mx-1">Ruby</button>
+          <button className="btn btn-success mx-1">RSpec</button>
+          <button className="btn btn-success mx-1">Colorize</button>
+        </div>
+        <br />
+        <b>
+          SourceCode:
+          <a className="hyper-link" onClick={() => window.open("https://github.com/cvilla714/linterproject")}>
+            <FaGithub className="portfolio-media" />
+          </a>
+        </b>
       </>
     );
     PopupboxManager.open({ content });
@@ -54,16 +66,28 @@ const Porftolio = () => {
         <div className="justimage">
           <img className="portfolio-image-popupbox-game" src={game} alt="Javascript Capstone Project" />
         </div>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia totam alias illo molestias explicabo ab modi quae sequi minima, rerum error in nisi aut laboriosam. Consequuntur quis earum doloremque nulla.</p>
+        <div className="">
+          <p className="py-1 legen">This project was about creating a game, using Phaser. My version is the Endless Runner</p>
+          <p className="mt-1">Technologies Used:</p>
+        </div>
+        <div className="technologies">
+          <button className="btn btn-success mx-1">Phaser</button>
+          <button className="btn btn-success mx-1">Javascript</button>
+          <button className="btn btn-success mx-1">Webpack</button>
+          <button className="btn btn-success mx-1">Jest</button>
+        </div>
+        <br />
         <b>DemoLink:</b>{" "}
         <a className="hyper-link" onClick={() => window.open("https://frosty-fermat-dca644.netlify.app/", "_blank")}>
-          https://frosty-fermat-dca644.netlify.app/
+          <RiVidicon2Fill className="portfolio-media" />
         </a>
         <br />
-        <b>GitHubCode:</b>{" "}
-        <a className="hyper-link" onClick={() => window.open("https://github.com/cvilla714/javascriptcapstone")}>
-          https://github.com/cvilla714/javascriptcapstone
-        </a>
+        <b>
+          GitHubCode:
+          <a className="hyper-link" onClick={() => window.open("https://github.com/cvilla714/javascriptcapstone")}>
+            <FaGithub className="portfolio-media" />
+          </a>
+        </b>
       </>
     );
     PopupboxManager.open({ content });
@@ -93,16 +117,29 @@ const Porftolio = () => {
         <div className="justimage">
           <img className="portfolio-image-popupbox-restaurant" src={restaurant} alt="Restaurant Project" />
         </div>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia totam alias illo molestias explicabo ab modi quae sequi minima, rerum error in nisi aut laboriosam. Consequuntur quis earum doloremque nulla.</p>
+        <div className="">
+          <p className="py-1 legen">The Project was about creating a restaurant page using javascript to generate the tabs and loading all the proper info, also using a single div in the HTML to append all elements</p>
+          <p className="mt-1">Technologies Used:</p>
+        </div>
+        <div className="technologies">
+          <button className="btn btn-success mx-1">Sass</button>
+          <button className="btn btn-success mx-1">Webpack</button>
+          <button className="btn btn-success mx-1">Npm</button>
+          <button className="btn btn-success mx-1">Javascript</button>
+          <button className="btn btn-success mx-1">Jest</button>
+        </div>
+        <br />
         <b>DemoLink:</b>{" "}
         <a className="hyper-link" onClick={() => window.open("https://rawcdn.githack.com/cvilla714/restaurant-page/4e6e899bba8894e04bb6481fdfec67082086a407/dist/index.html", "_blank")}>
-          https://rawcdn.githack.com/cvilla714/restaurant-page/4e6e899bba8894e04bb6481fdfec67082086a407/dist/index.html
+          <RiVidicon2Fill className="portfolio-media" />
         </a>
         <br />
-        <b>GitHubCode:</b>{" "}
-        <a className="hyper-link" onClick={() => window.open("https://github.com/cvilla714/restaurant-page")}>
-          https://github.com/cvilla714/restaurant-page
-        </a>
+        <b>
+          GitHubCode:
+          <a className="hyper-link" onClick={() => window.open("https://github.com/cvilla714/restaurant-page")}>
+            <FaGithub className="portfolio-media" />
+          </a>
+        </b>
       </>
     );
     PopupboxManager.open({ content });
@@ -132,16 +169,28 @@ const Porftolio = () => {
         <div className="justimage">
           <img className="portfolio-image-popupbox-list" src={todolist} alt="TodoList Project" />
         </div>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia totam alias illo molestias explicabo ab modi quae sequi minima, rerum error in nisi aut laboriosam. Consequuntur quis earum doloremque nulla.</p>
+        <div className="">
+          <p className="py-1 legen">The main concept was to create a todo list that could be added to existing projects or creating new ones</p>
+          <p className="mt-1">Technologies Used:</p>
+        </div>
+        <div className="technologies">
+          <button className="btn btn-success mx-1">Bootstrap</button>
+          <button className="btn btn-success mx-1">Webpack</button>
+          <button className="btn btn-success mx-1">Jest</button>
+          <button className="btn btn-success mx-1">Javascript</button>
+        </div>
+        <br />
         <b>DemoLink:</b>{" "}
         <a className="hyper-link" onClick={() => window.open("https://rawcdn.githack.com/cvilla714/list/2d7d50834770fd5e9d7f2a3b5203a9db841d2e85/dist/index.html", "_blank")}>
-          https://rawcdn.githack.com/cvilla714/list/2d7d50834770fd5e9d7f2a3b5203a9db841d2e85/dist/index.html
+          <RiVidicon2Fill className="portfolio-media" />
         </a>
         <br />
-        <b>GitHubCode:</b>{" "}
-        <a className="hyper-link" onClick={() => window.open("https://github.com/cvilla714/list")}>
-          https://github.com/cvilla714/list
-        </a>
+        <b>
+          GitHubCode:
+          <a className="hyper-link" onClick={() => window.open("https://github.com/cvilla714/list")}>
+            <FaGithub className="portfolio-media" />
+          </a>
+        </b>
       </>
     );
     PopupboxManager.open({ content });
@@ -171,16 +220,31 @@ const Porftolio = () => {
         <div className="justimage">
           <img className="portfolio-image-popupbox-weatherapp" src={weather} alt="Weather App Project" />
         </div>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia totam alias illo molestias explicabo ab modi quae sequi minima, rerum error in nisi aut laboriosam. Consequuntur quis earum doloremque nulla.</p>
+        <div className="">
+          <p className="py-1 legen">
+            The project was developed using an API, the idea is for the users to submit the city name in the input-form, and then display back the information regarding the temperature in Celcius, using with a toggle button change it to Farenheights and change the icon of the card to show if it's
+            day or night and the forecast. Extra features were to provide the time zone and the English name.
+          </p>
+          <p className="mt-1">Technologies Used:</p>
+        </div>
+        <div className="technologies">
+          <button className="btn btn-success mx-1">Bootstrap</button>
+          <button className="btn btn-success mx-1">Webpack</button>
+          <button className="btn btn-success mx-1">Jest</button>
+          <button className="btn btn-success mx-1">Javascript</button>
+        </div>
+        <br />
         <b>DemoLink:</b>{" "}
         <a className="hyper-link" onClick={() => window.open("https://rawcdn.githack.com/cvilla714/weather-app/e69d6a5a8edc54b6dcffc98761f872ad1898e26f/dist/index.html", "_blank")}>
-          https://rawcdn.githack.com/cvilla714/weather-app/e69d6a5a8edc54b6dcffc98761f872ad1898e26f/dist/index.html
+          <RiVidicon2Fill className="portfolio-media" />
         </a>
         <br />
-        <b>GitHubCode:</b>{" "}
-        <a className="hyper-link" onClick={() => window.open("https://github.com/cvilla714/weather-app")}>
-          https://github.com/cvilla714/weather-app
-        </a>
+        <b>
+          GitHubCode:
+          <a className="hyper-link" onClick={() => window.open("https://github.com/cvilla714/weather-app")}>
+            <FaGithub className="portfolio-media" />
+          </a>
+        </b>
       </>
     );
     PopupboxManager.open({ content });
@@ -210,16 +274,32 @@ const Porftolio = () => {
         <div className="justimage">
           <img className="portfolio-image-popupbox-article" src={article} alt="LifeStyle Capstone Project" />
         </div>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia totam alias illo molestias explicabo ab modi quae sequi minima, rerum error in nisi aut laboriosam. Consequuntur quis earum doloremque nulla.</p>
+        <div className="">
+          <p className="py-1 legen">
+            This project was about creating a Sports Article App, where the users will have the choice to select from several categories and get articles that are making references to the respective categories. The user can create their articles as well and add categories to add value to the app.
+            The App will feature on the main page the article that has the most likes, and each article card will show the most recent article added to the corresponding category.
+          </p>
+          <p className="mt-1">Technologies Used:</p>
+        </div>
+        <div className="technologies">
+          <button className="btn btn-success mx-1">Ruby</button>
+          <button className="btn btn-success mx-1">Ruby on Rails</button>
+          <button className="btn btn-success mx-1">Boostrap</button>
+          <button className="btn btn-success mx-1">PostgreSQL</button>
+          <button className="btn btn-success mx-1">RSpec</button>
+        </div>
+        <br />
         <b>DemoLink:</b>{" "}
         <a className="hyper-link" onClick={() => window.open("https://morning-island-07101.herokuapp.com/", "_blank")}>
-          https://morning-island-07101.herokuapp.com/
+          <RiVidicon2Fill className="portfolio-media" />
         </a>
         <br />
-        <b>GitHubCode:</b>{" "}
-        <a className="hyper-link" onClick={() => window.open("https://github.com/cvilla714/rails-capstone")}>
-          https://github.com/cvilla714/rails-capstone
-        </a>
+        <b>
+          GitHubCode:
+          <a className="hyper-link" onClick={() => window.open("https://github.com/cvilla714/rails-capstone")}>
+            <FaGithub className="portfolio-media" />
+          </a>
+        </b>
       </>
     );
     PopupboxManager.open({ content });
@@ -243,7 +323,7 @@ const Porftolio = () => {
   };
 
   return (
-    <div className="portfolio-wrapper">
+    <div id="portfolio" className="portfolio-wrapper">
       <div className="container">
         <h1 className="text-uppercase text-center py-5">portfolio</h1>
         <div className="image-box-wrapper row justify-content-center">
