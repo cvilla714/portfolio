@@ -7,6 +7,7 @@ import Header from "./components/Header";
 import AboutMe from "./components/AboutMe";
 import Porftolio from "./components/Porftolio";
 import Contacts from "./components/Contacts";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -37,6 +38,7 @@ function App() {
       <AboutMe />
       <Porftolio />
       <Contacts />
+      <Footer />
     </>
   );
 }
