@@ -6,6 +6,7 @@ import Navbar from "./components/Navbar";
 import Header from "./components/Header";
 import AboutMe from "./components/AboutMe";
 import Porftolio from "./components/Porftolio";
+import Contacts from "./components/Contacts";
 
 function App() {
   return (
@@ -35,6 +36,7 @@ function App() {
       <Header />
       <AboutMe />
       <Porftolio />
+      <Contacts />
     </>
   );
 }
