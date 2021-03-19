@@ -1,7 +1,26 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+
+:root {
+  --primary-white: #ffffff;
+  --primary-light-grey: #f4f4f4;
+  --primary-grey: #ccd1d9;
+  --primary-dark-grey: #666666;
+  --primary-orange: #f9ab00;
+  --primary-dark: rgb(52, 58, 64);
+  --primary-red: #ef4035;
+  --primary-hover-red: #f33501;
+  --primary-black: #000000;
+  --primary-yellow: #ffff99;
+  --primary-green: #03fc39;
+  --popupbox-padding: 0 0.5rem;
+}
+
+body {
+  font-family: "Roboto" sans-serif;
+}
 .App {
   text-align: center;
 }
-
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -35,4 +54,407 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+nav {
+  z-index: 2;
+}
+
+.logo {
+  /* width: 3.125rem; */
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+}
+
+/*---Menu Links----*/
+
+nav a.nav-link {
+  font-weight: 500;
+  letter-spacing: 0.0375rem;
+  cursor: pointer;
+}
+
+nav ul li {
+  text-transform: uppercase;
+}
+
+.navbar-nav > li > a {
+  margin-right: 0.75rem;
+  margin-left: 0.75rem;
+  color: var(--primary-white) !important;
+  border-top: 0.1875rem solid var(--primary-dark);
+}
+
+.navbar-brand {
+  max-width: 17.25rem;
+  padding: 0 !important;
+  height: 6rem;
+}
+
+.navbar-nav > li > a.active,
+.navbar-nav > li > a.active:focus {
+  border-top: 0.1875rem solid var(--primay-orange);
+}
+
+.navbar-nav > li > a:hover {
+  border-top: 0.1875rem solid var(--primay-orange);
+}
+/*-------------------------------Header--------------------------*/
+
+.header-wrapper {
+  position: relative;
+  /* background: url(wall-and-laptop.jpg) no-repeat; */
+  background: url(wall-and-laptop-background.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
+
+.main-info {
+  display: flex;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  z-index: 1;
+  /* font-family: "Roboto" sans-serif; */
+}
+
+.main-info h1 {
+  color: var(--primary-white);
+  font-weight: 900;
+  font-size: 3rem;
+  text-transform: uppercase;
+}
+
+/*-------------------------------Typed TExt--------------------------*/
+.typed-text {
+  font-size: 2rem;
+  color: var(--primary-white);
+}
+
+/*-------------------------------Header Main offer button-------------------------*/
+
+.btn-main-offer {
+  border: 1px solid var(--primary-red);
+  text-transform: uppercase;
+  border-radius: 0;
+  padding: 0.625rem 0.75rem 0.75rem 0.75rem;
+  color: var(--primary-white);
+  margin-top: 2rem;
+}
+.btn-main-offer:hover {
+  text-decoration: none;
+  background-color: var(--primary-hover-red);
+  color: var(--primary-white);
+  transition: 0.2s ease-in-out;
+}
+
+/*-------------------------------Particless Js------------------------*/
+.tsparticles-canvas-el {
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+  z-index: 1;
+}
+
+@media (max-width: 768px) {
+  .particles-canvas {
+    display: none;
+  }
+  .main-info h1 {
+    font-size: 1.5rem !important;
+  }
+  .typed-text {
+    font-size: 1.3rem !important;
+  }
+}
+
+/*-------------------------------About Me------------------------*/
+.photo-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile-img {
+  /* width: 70%; */
+  width: 16rem;
+  border-radius: 50%;
+  padding: 0.3rem;
+  border: 1px solid var(--primay-orange);
+}
+
+.about-heading {
+  text-transform: uppercase;
+  color: var(--primay-orange);
+}
+
+@media (max-width: 468px) {
+  .profile-img {
+    width: 10rem;
+  }
+}
+
+/*-------------------------------Porftolio------------------------*/
+.portfolio-wrapper {
+  background: var(--primary-light-grey);
+  padding: 3rem 0;
+}
+
+.portfolio-image {
+  width: 15rem;
+  height: 15rem;
+  object-fit: cover;
+  border: 1px solid var(--primary-orange);
+  padding: 0 0.5rem;
+}
+
+.portfolio-image-box {
+  position: relative;
+  margin: 1rem;
+}
+
+/*-------------------------------Overflow Box ------------------------*/
+.overflow {
+  position: absolute;
+  opacity: 0;
+  background: var(--primary-black);
+  width: 15rem;
+  height: 15rem;
+  top: 0;
+  border: 1px solid var(--primary-red);
+  cursor: pointer;
+}
+
+.portfolio-image-box:hover .overflow {
+  opacity: 60%;
+  transition: 0.3s ease-in-out;
+}
+
+.portfolio-icon {
+  position: absolute;
+  opacity: 0;
+  margin-left: -8rem;
+  margin-top: 7.2rem;
+  color: var(--primary-orange);
+  font-size: 1.5rem;
+}
+
+.portfolio-image-box:hover .portfolio-icon {
+  opacity: 70%;
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+/*-------------------------------PopupBox ------------------------*/
+.portfolio-image-popbox-linter {
+  width: 45rem;
+  padding: var(--popupbox-padding);
+}
+
+.portfolio-image-popupbox-game {
+  width: 29rem;
+  padding: var(--popupbox-padding);
+}
+
+.portfolio-image-popupbox-restaurant {
+  width: 51rem;
+  padding: var(--popupbox-padding);
+}
+
+.portfolio-image-popupbox-list {
+  width: 41rem;
+  padding: var(--popupbox-padding);
+}
+
+.portfolio-image-popupbox-weatherapp {
+  width: 27rem;
+  padding: var(--popupbox-padding);
+}
+
+.portfolio-image-popupbox-article {
+  width: 49rem;
+  padding: var(--popupbox-padding);
+}
+.hyper-link {
+  cursor: pointer;
+  color: var(--primary-orange);
+}
+
+.hyper-link:hover {
+  color: var(--primary-red);
+}
+
+.justimage {
+  width: 100%;
+  text-align: center;
+}
+
+.legen {
+  margin: 0;
+}
+
+.popupbox-wrapper {
+  margin-top: 7rem;
+}
+/*-------------------------------MediaQueries for PopupBox ------------------------*/
+@media (max-width: 768px) {
+  .portfolio-image-popupbox-linter,
+  .portfolio-image-popupbox-article,
+  .portfolio-image-popupbox-game,
+  .portfolio-image-popupbox-list,
+  .portfolio-image-popupbox-restaurant,
+  .portfolio-image-popupbox-weatherapp {
+    width: 100%;
+  }
+}
+
+@media (max-height: 570px) {
+  .portfolio-image-popupbox-linter,
+  .portfolio-image-popupbox-article,
+  .portfolio-image-popupbox-game,
+  .portfolio-image-popupbox-list,
+  .portfolio-image-popupbox-restaurant,
+  .portfolio-image-popupbox-weatherapp {
+    width: 100%;
+  }
+  .popupbox-wrapper {
+    height: 100%;
+  }
+}
+
+/*------------------------------Contact Components ------------------------*/
+.contacts {
+  background: var(--primary-dark);
+  padding: 3rem 0;
+}
+
+.contacts h1 {
+  color: var(--primary-orange);
+  padding: 1.3rem 0;
+  text-transform: uppercase;
+}
+
+.contacts p {
+  color: var(--primary-grey);
+  font-size: 1, 2rem;
+}
+
+/*------------------------------Inputs ------------------------*/
+.contacts input,
+.contacts textarea {
+  width: 100%;
+  box-sizing: border-box;
+  background: none;
+  resize: none;
+  border: 0;
+  border-bottom: 0.125rem solid var(--primary-dark-grey);
+  border-radius: 0;
+  color: var(--primary-orange);
+  outline: 0 !important;
+  box-shadow: none !important;
+  margin-bottom: 1rem;
+  padding-left: 0 !important;
+}
+
+.contacts .container {
+  padding: 4rem 0;
+}
+
+.contacts input:focus,
+.contacts textarea:focus {
+  background: transparent;
+  color: var(--primary-orange);
+  border-bottom: 0.125rem solid var(--primary-dark-grey);
+}
+
+.contacts textarea {
+  height: 12.2rem !important;
+}
+
+.contact-btn {
+  margin: 1rem 0 0 0;
+  width: 100%;
+  background: none;
+}
+
+.line {
+  position: relative;
+  top: -0.8rem;
+  width: 0;
+  height: 0.125rem;
+  background: var(--primary-orange);
+  display: inline-block;
+}
+
+input:focus + .line,
+textarea:focus + .line {
+  width: 100%;
+  transition: width 0.5s ease-in-out;
+}
+
+input.form-control {
+  margin: -0.3rem 0;
+}
+
+textarea.form-control {
+  margin: -0.3rem 0;
+}
+
+.error-message {
+  color: var(--primary-yellow);
+}
+
+.success-message {
+  font-weight: 900;
+  color: var(--primary-green);
+}
+/*------------------------------Media for form ------------------------*/
+@media (max-width: 768px) {
+  .contacts {
+    overflow-x: hidden;
+  }
+
+  .contacts .container {
+    padding: 0 1rem;
+  }
+
+  .cotacts p {
+    padding: 0 0.4rem;
+  }
+}
+
+/*------------------------------Footer ------------------------*/
+.footer {
+  background: var(--primary-black);
+  color: var(--primary-dark);
+  padding: 3rem;
+}
+
+.footer a {
+  text-decoration: none;
+  color: var(--primary-grey);
+}
+
+.footer a:hover {
+  text-decoration: none;
+  color: var(--primary-orange);
+  cursor: pointer;
+}
+
+.media {
+  font-size: 2rem;
+  margin: 3rem;
+}
+
+.portfolio-media {
+  font-size: 2rem;
+  margin-left: 1rem;
 }
