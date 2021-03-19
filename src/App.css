@@ -10,6 +10,8 @@
   --primary-red: #ef4035;
   --primary-hover-red: #f33501;
   --primary-black: #000000;
+  --primary-yellow: #ffff99;
+  --primary-green: #03fc39;
   --popupbox-padding: 0 0.5rem;
 }
 
@@ -396,6 +398,14 @@ textarea.form-control {
   margin: -0.3rem 0;
 }
 
+.error-message {
+  color: var(--primary-yellow);
+}
+
+.success-message {
+  font-weight: 900;
+  color: var(--primary-green);
+}
 /*------------------------------Media for form ------------------------*/
 @media (max-width: 768px) {
   .contacts {
