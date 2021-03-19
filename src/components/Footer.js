@@ -1,18 +1,25 @@
 import React from "react";
-import { FaFacebook, FaGithub, FaTwitter, FaLinkedin } from "react-icons/fa";
-
+import { FaGithub, FaTwitter, FaLinkedin } from "react-icons/fa";
+import { Link } from "react-scroll";
 const Footer = () => {
   return (
     <div className="footer">
       <div className="container">
         <div className="d-flex  justify-content-around">
-          <a className="footer-nav">Home</a>
+          <Link smooth={true} to="home" className="footer-nav">
+            Home
+          </Link>
           <br />
-          <a className="footer-nav">About Me</a>
-
-          <a className="footer-nav">Portfolio</a>
+          <Link smooth={true} to="about" className="footer-nav">
+            About Me
+          </Link>
+          <Link smooth={true} to="portfolio" className="footer-nav">
+            Portfolio
+          </Link>
           <br />
-          <a className="footer-nav">Contact Me</a>
+          <Link smooth={true} to="contact" className="footer-nav">
+            Contact Me
+          </Link>
         </div>
         <div className=" aling-items-center">
           <div className="d-flex justify-content-center">
