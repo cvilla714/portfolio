@@ -108,7 +108,7 @@ nav ul li {
   background: url(wall-and-laptop-background.jpg) no-repeat;
   background-size: cover;
   background-position: center;
-  height: 90vh;
+  height: 100vh;
 }
 
 .main-info {
@@ -260,27 +260,27 @@ nav ul li {
 }
 
 .portfolio-image-popupbox-game {
-  width: 37rem;
+  width: 29rem;
   padding: var(--popupbox-padding);
 }
 
 .portfolio-image-popupbox-restaurant {
-  width: 65rem;
+  width: 51rem;
   padding: var(--popupbox-padding);
 }
 
 .portfolio-image-popupbox-list {
-  width: 45rem;
+  width: 41rem;
   padding: var(--popupbox-padding);
 }
 
 .portfolio-image-popupbox-weatherapp {
-  width: 35rem;
+  width: 27rem;
   padding: var(--popupbox-padding);
 }
 
 .portfolio-image-popupbox-article {
-  width: 70rem;
+  width: 49rem;
   padding: var(--popupbox-padding);
 }
 .hyper-link {
@@ -301,6 +301,9 @@ nav ul li {
   margin: 0;
 }
 
+.popupbox-wrapper {
+  margin-top: 7rem;
+}
 /*-------------------------------MediaQueries for PopupBox ------------------------*/
 @media (max-width: 768px) {
   .portfolio-image-popupbox-linter,
