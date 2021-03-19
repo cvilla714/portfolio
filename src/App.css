@@ -61,7 +61,10 @@ nav {
 }
 
 .logo {
-  width: 3.125rem;
+  /* width: 3.125rem; */
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
 }
 
 /*---Menu Links----*/
@@ -294,6 +297,10 @@ nav ul li {
   text-align: center;
 }
 
+.legen {
+  margin: 0;
+}
+
 /*-------------------------------MediaQueries for PopupBox ------------------------*/
 @media (max-width: 768px) {
   .portfolio-image-popupbox-linter,
@@ -442,4 +449,9 @@ textarea.form-control {
 .media {
   font-size: 2rem;
   margin: 3rem;
+}
+
+.portfolio-media {
+  font-size: 2rem;
+  margin-left: 1rem;
 }
