@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.3f83462f.css",
-    "main.js": "/portfolio/static/js/main.cd553628.js",
+    "main.css": "/portfolio/static/css/main.9fdd90be.css",
+    "main.js": "/portfolio/static/js/main.a6b80f04.js",
     "static/js/787.5db04c4e.chunk.js": "/portfolio/static/js/787.5db04c4e.chunk.js",
     "static/media/lifestylearticle.png": "/portfolio/static/media/lifestylearticle.c0724d56db5175b0fc10.png",
     "static/media/restaurant.png": "/portfolio/static/media/restaurant.70d245fd826285520b16.png",
@@ -10,19 +10,19 @@
     "static/media/me.jpg": "/portfolio/static/media/me.9b4e2f46dae368115e53.jpg",
     "static/media/wall-and-laptop-background.jpg": "/portfolio/static/media/wall-and-laptop-background.f9e274f49e7f72950a2f.jpg",
     "static/media/game.png": "/portfolio/static/media/game.78646089c24a43d37229.png",
+    "static/media/cosmelresume.pdf": "/portfolio/static/media/cosmelresume.1e508a42757026258b5a.pdf",
     "static/media/trackerexpensesapp.png": "/portfolio/static/media/trackerexpensesapp.fcc210c2dc850df2bcc4.png",
-    "static/media/cosmelresume.pdf": "/portfolio/static/media/cosmelresume.de2441c49354111ee2e4.pdf",
     "static/media/todolist.png": "/portfolio/static/media/todolist.361d7652796e9b59f703.png",
     "static/media/weatherapp.png": "/portfolio/static/media/weatherapp.596aefe03fca4e0be068.png",
     "static/media/contactkeeper.png": "/portfolio/static/media/contactkeeper.1c93e5a441f2e5c24c29.png",
     "static/media/linter.png": "/portfolio/static/media/linter.1e56c4888812989c7b7c.png",
     "index.html": "/portfolio/index.html",
-    "main.3f83462f.css.map": "/portfolio/static/css/main.3f83462f.css.map",
-    "main.cd553628.js.map": "/portfolio/static/js/main.cd553628.js.map",
+    "main.9fdd90be.css.map": "/portfolio/static/css/main.9fdd90be.css.map",
+    "main.a6b80f04.js.map": "/portfolio/static/js/main.a6b80f04.js.map",
     "787.5db04c4e.chunk.js.map": "/portfolio/static/js/787.5db04c4e.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.3f83462f.css",
-    "static/js/main.cd553628.js"
+    "static/css/main.9fdd90be.css",
+    "static/js/main.a6b80f04.js"
   ]
 }
