@@ -133,6 +133,14 @@ nav ul li {
   text-transform: uppercase;
 }
 
+/* New styles for the technology category headings */
+.tech-category {
+  font-size: 1.5rem;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  color: var(--primary-white);
+}
+
 /*-------------------------------Typed TExt--------------------------*/
 .typed-text {
   font-size: 2rem;
