@@ -192,8 +192,7 @@ nav ul li {
 }
 
 .profile-img {
-  /* width: 70%; */
-  width: 16rem;
+  width: 100%;
   border-radius: 50%;
   padding: 0.3rem;
   border: 1px solid var(--primay-orange);
